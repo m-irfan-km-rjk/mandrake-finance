@@ -1,14 +1,25 @@
 function MNavbar() {
-    return(
-        <div className="h-[50px] bg-black w-full flex px-2 justify-between items-center">
-            <div className="flex gap-2">
-                <img src="/Mandrake.png" width={160} height={50} />
+    return (
+        <div className="h-[60px] bg-gradient-to-r from-gray-900 to-indigo-700 w-full flex pl-6 justify-between items-center shadow-md">
+            {/* Logo */}
+            <div className="flex items-center">
+                <img src="/Mandrake.png" width={180} height={50} alt="Logo" />
             </div>
-            <ul className="flex font-bold justify-between w-[25%] text-lg text-white">
-                <li className="border-white border-l p-2">Home</li>
-                <li className="border-white border-l p-2">About Us</li>
-                <li className="border-white border-l p-2">Services</li>
-                <li className="border-white border-l p-2">Contact Us</li>
+
+            {/* Navigation Menu */}
+            <ul className="grid grid-cols-4 font-semibold text-lg text-white">
+                <li className="border-white p-4 hover:bg-blue-500 cursor-pointer transition duration-300 h-full">
+                    Home
+                </li>
+                <li className="border-white p-4 hover:bg-blue-500 cursor-pointer transition duration-300 h-full">
+                    About Us
+                </li>
+                <li className="border-white p-4 hover:bg-blue-500 cursor-pointer transition duration-300 h-full">
+                    Services
+                </li>
+                <li className="border-white p-4 hover:bg-blue-500 cursor-pointer transition duration-300 h-full">
+                    Contact Us
+                </li>
             </ul>
         </div>
     );
